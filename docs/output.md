@@ -1,4 +1,4 @@
-# nf-core/sourmashnf: Output
+# fmalmeida/sourmashnf: Output
 
 ## Introduction
 

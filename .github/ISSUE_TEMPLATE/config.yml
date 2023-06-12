@@ -4,4 +4,4 @@ contact_links:
     about: Please join the nf-core community here
   - name: "Slack #sourmashnf channel"
     url: https://nfcore.slack.com/channels/sourmashnf
-    about: Discussion about the nf-core/sourmashnf pipeline
+    about: Discussion about the fmalmeida/sourmashnf pipeline

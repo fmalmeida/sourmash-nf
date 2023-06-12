@@ -1,23 +1,11 @@
 #!/usr/bin/env nextflow
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    nf-core/sourmashnf
+    fmalmeida/sourmashnf
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Github : https://github.com/nf-core/sourmashnf
-    Website: https://nf-co.re/sourmashnf
-    Slack  : https://nfcore.slack.com/channels/sourmashnf
-----------------------------------------------------------------------------------------
 */
 
 nextflow.enable.dsl = 2
-
-/*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    GENOME PARAMETER VALUES
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-
-params.fasta = WorkflowMain.getGenomeAttribute(params, 'fasta')
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,13 +21,13 @@ WorkflowMain.initialise(workflow, params, log)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-include { SOURMASHNF } from './workflows/sourmashnf'
+include { SOURMASH } from './workflows/sourmash'
 
 //
-// WORKFLOW: Run main nf-core/sourmashnf analysis pipeline
+// WORKFLOW: Run main fmalmeida/sourmashnf analysis pipeline
 //
-workflow NFCORE_SOURMASHNF {
-    SOURMASHNF ()
+workflow NFCORE_SOURMASH {
+    SOURMASH ()
 }
 
 /*
@@ -50,10 +38,10 @@ workflow NFCORE_SOURMASHNF {
 
 //
 // WORKFLOW: Execute a single named workflow for the pipeline
-// See: https://github.com/nf-core/rnaseq/issues/619
+// See: https://github.com/fmalmeida/rnaseq/issues/619
 //
 workflow {
-    NFCORE_SOURMASHNF ()
+    NFCORE_SOURMASH ()
 }
 
 /*

@@ -4,15 +4,15 @@
   |\\ | |__  __ /  ` /  \\ |__) |__         }  {
   | \\| |       \\__, \\__/ |  \\ |___     \\`-._,-`-,
                                         `._,._,'
-  nf-core/sourmashnf v${version}
+  fmalmeida/sourmashnf v${version}
 ----------------------------------------------------
 Run Name: $runName
 
 <% if (success){
-    out << "## nf-core/sourmashnf execution completed successfully! ##"
+    out << "## fmalmeida/sourmashnf execution completed successfully! ##"
 } else {
     out << """####################################################
-## nf-core/sourmashnf execution completed unsuccessfully! ##
+## fmalmeida/sourmashnf execution completed unsuccessfully! ##
 ####################################################
 The exit status of the task that caused the workflow execution to fail was: $exitStatus.
 The full error message was:
@@ -35,5 +35,5 @@ Pipeline Configuration:
 <% out << summary.collect{ k,v -> " - $k: $v" }.join("\n") %>
 
 --
-nf-core/sourmashnf
-https://github.com/nf-core/sourmashnf
+fmalmeida/sourmashnf
+https://github.com/fmalmeida/sourmashnf

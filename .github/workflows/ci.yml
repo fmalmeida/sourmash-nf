@@ -19,7 +19,7 @@ jobs:
   test:
     name: Run pipeline with test data
     # Only run on push if this is the nf-core dev branch (merged PRs)
-    if: "${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == 'nf-core/sourmashnf') }}"
+    if: "${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == 'fmalmeida/sourmashnf') }}"
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Nextflow
-        uses: nf-core/setup-nextflow@v1
+        uses: fmalmeida/setup-nextflow@v1
         with:
           version: "${{ matrix.NXF_VER }}"
 

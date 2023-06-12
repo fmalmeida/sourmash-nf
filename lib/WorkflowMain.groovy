@@ -1,5 +1,5 @@
 //
-// This file holds several functions specific to the main.nf workflow in the nf-core/sourmashnf pipeline
+// This file holds several functions specific to the main.nf workflow in the fmalmeida/sourmashnf pipeline
 //
 
 import nextflow.Nextflow

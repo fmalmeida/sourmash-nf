@@ -11,8 +11,8 @@ indent_style = space
 [*.{md,yml,yaml,html,css,scss,js}]
 indent_size = 2
 
-# These files are edited and tested upstream in nf-core/modules
-[/modules/nf-core/**]
+# These files are edited and tested upstream in fmalmeida/modules
+[/modules/fmalmeida/**]
 charset = unset
 end_of_line = unset
 insert_final_newline = unset

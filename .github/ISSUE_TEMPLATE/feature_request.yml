@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest an idea for the nf-core/sourmashnf pipeline
+description: Suggest an idea for the fmalmeida/sourmashnf pipeline
 labels: enhancement
 body:
   - type: textarea

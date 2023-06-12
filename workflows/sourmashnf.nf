@@ -35,7 +35,7 @@ ch_multiqc_custom_methods_description = params.multiqc_methods_description ? fil
 */
 
 //
-// SUBWORKFLOW: Consisting of a mix of local and nf-core/modules
+// SUBWORKFLOW: Consisting of a mix of local and fmalmeida/modules
 //
 include { INPUT_CHECK } from '../subworkflows/local/input_check'
 
@@ -46,11 +46,11 @@ include { INPUT_CHECK } from '../subworkflows/local/input_check'
 */
 
 //
-// MODULE: Installed directly from nf-core/modules
+// MODULE: Installed directly from fmalmeida/modules
 //
-include { FASTQC                      } from '../modules/nf-core/fastqc/main'
-include { MULTIQC                     } from '../modules/nf-core/multiqc/main'
-include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/nf-core/custom/dumpsoftwareversions/main'
+include { FASTQC                      } from '../modules/fmalmeida/fastqc/main'
+include { MULTIQC                     } from '../modules/fmalmeida/multiqc/main'
+include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/fmalmeida/custom/dumpsoftwareversions/main'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/nf-core/custom/dumpsoft
 // Info required for completion email and summary
 def multiqc_report = []
 
-workflow SOURMASHNF {
+workflow SOURMASH {
 
     ch_versions = Channel.empty()
 

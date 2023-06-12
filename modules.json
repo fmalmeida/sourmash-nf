@@ -1,8 +1,8 @@
 {
-    "name": "nf-core/sourmashnf",
-    "homePage": "https://github.com/nf-core/sourmashnf",
+    "name": "fmalmeida/sourmashnf",
+    "homePage": "https://github.com/fmalmeida/sourmashnf",
     "repos": {
-        "https://github.com/nf-core/modules.git": {
+        "https://github.com/fmalmeida/modules.git": {
             "modules": {
                 "nf-core": {
                     "custom/dumpsoftwareversions": {
