@@ -13,8 +13,16 @@ WorkflowSourmashnf.initialise(params, log)
 def checkPathParamList = [ params.input ]
 for (param in checkPathParamList) { if (param) { file(param, checkIfExists: true) } }
 
-// Check mandatory parameters
-if (params.input) { ch_input = file(params.input) } else { exit 1, 'Input samplesheet not specified!' }
+// Load inputs
+Channel
+    .fromPath( "${params.input}/*" )
+    .map { genome ->
+        def meta = [:]
+        meta.id = genome.getBaseName()
+
+        [ meta, genome ]
+    }
+    .set{ ch_input_fna }
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +68,8 @@ def multiqc_report = []
 
 workflow SOURMASH {
 
-    println ch_input
+    // Run sourmash sketch
+    SOURMASH_SKETCH ( ch_input_fna )
 
 }
 
