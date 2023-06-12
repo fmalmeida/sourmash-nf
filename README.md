@@ -3,20 +3,7 @@
 TODO: Clean up and add small readme with instructions.
 ## Introduction
 
-**fmalmeida/sourmashnf** is a bioinformatics pipeline that ...
-
-<!-- TODO nf-core:
-   Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
-   major pipeline sections and the types of output it produces. You're giving an overview to someone new
-   to nf-core here, in 15-20 seconds. For an example, see https://github.com/fmalmeida/rnaseq/blob/master/README.md#introduction
--->
-
-<!-- TODO nf-core: Include a figure that guides the user through the major workflow steps. Many nf-core
-     workflows use the "tube map" design for that. See https://nf-co.re/docs/contributing/design_guidelines#examples for examples.   -->
-<!-- TODO nf-core: Fill in short bullet-pointed list of the default steps in the pipeline -->
-
-1. Read QC ([`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))
-2. Present QC for raw reads ([`MultiQC`](http://multiqc.info/))
+**fmalmeida/sourmashnf** is a small and straightforward bioinformatics pipeline that uses [sourmash](https://sourmash.readthedocs.io/en/latest/) to compare genome sequences and plot it like in https://sourmash.readthedocs.io/en/latest/tutorial-basic.html#compare-many-signatures-and-build-a-tree.
 
 ## Usage
 
@@ -25,31 +12,16 @@ TODO: Clean up and add small readme with instructions.
 > to set-up Nextflow. Make sure to [test your setup](https://nf-co.re/docs/usage/introduction#how-to-run-a-pipeline)
 > with `-profile test` before running the workflow on actual data.
 
-<!-- TODO nf-core: Describe the minimum required steps to execute the pipeline, e.g. how to prepare samplesheets.
-     Explain what rows and columns represent. For instance (please edit as appropriate):
+The pipeline is very simple and does not have many optional parameters. Customization to the sourmash modules can be done using the special `ext.args` directive as explained here: https://nf-co.re/developers/modules#general
 
-First, prepare a samplesheet with your input data that looks as follows:
-
-`samplesheet.csv`:
-
-```csv
-sample,fastq_1,fastq_2
-CONTROL_REP1,AEG588A1_S1_L002_R1_001.fastq.gz,AEG588A1_S1_L002_R2_001.fastq.gz
-```
-
-Each row represents a fastq file (single-end) or a pair of fastq files (paired end).
-
--->
-
-Now, you can run the pipeline using:
-
-<!-- TODO nf-core: update the following command to include all required parameters for a minimal example -->
+The usual command line looks like this:
 
 ```bash
-nextflow run fmalmeida/sourmashnf \
-   -profile <docker/singularity/.../institute> \
-   --input samplesheet.csv \
-   --outdir <OUTDIR>
+nextflow run \
+   fmalmeida/sourmashnf \
+      -profile <docker/singularity/conda> \
+      --input <path to directory with input genomes> \
+      --outdir <OUTDIR>
 ```
 
 > **Warning:**
@@ -57,27 +29,17 @@ nextflow run fmalmeida/sourmashnf \
 > provided by the `-c` Nextflow option can be used to provide any configuration _**except for parameters**_;
 > see [docs](https://nf-co.re/usage/configuration#custom-configuration-files).
 
-For more details, please refer to the [usage documentation](https://nf-co.re/sourmashnf/usage) and the [parameter documentation](https://nf-co.re/sourmashnf/parameters).
-
 ## Pipeline output
 
-To see the the results of a test run with a full size dataset refer to the [results](https://nf-co.re/sourmashnf/results) tab on the nf-core website pipeline page.
-For more details about the output files and reports, please refer to the
-[output documentation](https://nf-co.re/sourmashnf/output).
+TODO.
 
 ## Credits
 
-fmalmeida/sourmashnf was originally written by Felipe Marques de Almeida.
-
-We thank the following people for their extensive assistance in the development of this pipeline:
-
-<!-- TODO nf-core: If applicable, make list of people who have also contributed -->
+fmalmeida/sourmashnf was originally written by Felipe Marques de Almeida (@fmalmeida).
 
 ## Contributions and Support
 
-If you would like to contribute to this pipeline, please see the [contributing guidelines](.github/CONTRIBUTING.md).
-
-For further information or help, don't hesitate to get in touch on the [Slack `#sourmashnf` channel](https://nfcore.slack.com/channels/sourmashnf) (you can join with [this invite](https://nf-co.re/join/slack)).
+If you would like to contribute to this pipeline, please do so :smile:.
 
 ## Citations
 
