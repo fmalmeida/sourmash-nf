@@ -18,7 +18,7 @@ The usual command line looks like this:
 
 ```bash
 nextflow run \
-   fmalmeida/sourmashnf \
+   fmalmeida/sourmash-nf \
       -profile <docker/singularity/conda> \
       --input <path to directory with input genomes> \
       --outdir <OUTDIR>
