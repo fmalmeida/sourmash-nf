@@ -11,12 +11,11 @@ class WorkflowSourmashnf {
     // Check and validate parameters
     //
     public static void initialise(params, log) {
-        genomeExistsError(params, log)
 
-
-        if (!params.fasta) {
-            Nextflow.error "Genome fasta file not specified with e.g. '--fasta genome.fa' or via a detectable config file."
+        if (!params.input) {
+            Nextflow.error "A directory containing the input genomes must be specified with the --input parameter."
         }
+
     }
 
     //
