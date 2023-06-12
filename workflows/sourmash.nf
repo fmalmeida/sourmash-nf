@@ -44,8 +44,10 @@ ch_multiqc_custom_methods_description = params.multiqc_methods_description ? fil
 */
 
 //
-// MODULE: Installed directly from fmalmeida/modules
+// MODULE: Installed directly from nf-core/modules
 //
+include { SOURMASH_SKETCH  } from '../modules/nf-core/sourmash/sketch/main'
+include { SOURMASH_COMPARE } from '../modules/nf-core/sourmash/compare/main'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
