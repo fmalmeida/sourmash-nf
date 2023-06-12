@@ -71,6 +71,24 @@ workflow SOURMASH {
     // Run sourmash sketch
     SOURMASH_SKETCH ( ch_input_fna )
 
+    // Run sourmash compare
+    ch_sourmash_compare =
+        SOURMASH_SKETCH.out.signatures
+        .map{ meta, signatures ->
+            def meta2 = [:]
+            meta2.id  = "${params.sourmash_study}".replaceAll("\\s","")
+
+            [ meta2, signatures ]
+        }
+        .groupTuple( by:0 )
+
+    SOURMASH_COMPARE (
+        ch_sourmash_compare,
+        [],
+        true,
+        true
+    )
+
 }
 
 /*
