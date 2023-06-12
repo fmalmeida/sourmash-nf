@@ -1,4 +1,4 @@
-# ![fmalmeida/sourmashnf](docs/images/nf-core-sourmashnf_logo_light.png#gh-light-mode-only) ![fmalmeida/sourmashnf](docs/images/nf-core-sourmashnf_logo_dark.png#gh-dark-mode-only)
+# fmalmeida/sourmashnf
 
 TODO: Clean up and add small readme with instructions.
 ## Introduction
