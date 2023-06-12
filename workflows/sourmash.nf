@@ -42,8 +42,9 @@ ch_multiqc_custom_methods_description = params.multiqc_methods_description ? fil
 */
 
 //
-// SUBWORKFLOW: Consisting of a mix of local and fmalmeida/modules
+// MODULE: custom
 //
+include { SOURMASH_PLOT } from '../modules/local/sourmash_plot'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,6 +89,9 @@ workflow SOURMASH {
         true,
         true
     )
+
+    // plot results
+    SOURMASH_PLOT ( SOURMASH_COMPARE.out.matrix )
 
 }
 
