@@ -1,0 +1,15 @@
+{
+    "description": "A simple NF pipeline implementation to compare genomes with sourmash and plot the results.",
+    "license": "other-open",
+    "title": "fmalmeida/sourmash-nf: As simple and quick implementation of genome comparison with sourmash.",
+    "version": "v0.2",
+    "upload_type": "software",
+    "creators": [
+        {
+            "orcid": "0000-0002-6855-3379",
+            "affiliation": "University of Brasilia @compgenunb",
+            "name": "Felipe Marques de Almeida"
+        }
+    ],
+    "access_right": "open"
+}
