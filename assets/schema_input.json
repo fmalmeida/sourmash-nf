@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/fmalmeida/sourmashnf/master/assets/schema_input.json",
+    "$id": "https://raw.githubusercontent.com/nf-core/sourmashnf/master/assets/schema_input.json",
     "title": "fmalmeida/sourmashnf pipeline - params.input schema",
     "description": "Schema for the file provided with params.input",
     "type": "array",
