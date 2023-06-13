@@ -1,7 +1,8 @@
 # fmalmeida/sourmash-nf
 
-[![GitHub Actions CI Status](https://github.com/fmalmeida/sourmash-nf/workflows/nf-core%20CI/badge.svg)](https://github.com/fmalmeida/sourmash-nf/actions?query=workflow%3A%22nf-core+CI%22)
 <!-- [![Cite with Zenodo](http://img.shields.io/badge/DOI-10.5281/zenodo.3568187-1073c8)](https://doi.org/10.5281/zenodo.3568187) -->
+[![GitHub Actions CI Status](https://github.com/fmalmeida/sourmash-nf/workflows/docker-ci/badge.svg)](https://github.com/fmalmeida/sourmash-nf/actions?query=workflow%3A%22docker-ci%22)
+[![GitHub Actions CI Status](https://github.com/fmalmeida/sourmash-nf/workflows/singularity-ci/badge.svg)](https://github.com/fmalmeida/sourmash-nf/actions?query=workflow%3A%22singularity-ci%22)
 [![Nextflow](https://img.shields.io/badge/nextflow%20DSL2-%E2%89%A522.10.1-23aa62.svg)](https://www.nextflow.io/)
 [![run with conda](http://img.shields.io/badge/run%20with-conda-3EB049?labelColor=000000&logo=anaconda)](https://docs.conda.io/en/latest/)
 [![run with docker](https://img.shields.io/badge/run%20with-docker-0db7ed?labelColor=000000&logo=docker)](https://www.docker.com/)

@@ -1,5 +1,5 @@
 # This workflow set's up an automated execution for testing the code when a new PR is created
-name: Testing docker from PR
+name: docker-ci
 on:
   pull_request:
     branches: master
