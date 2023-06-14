@@ -8,7 +8,7 @@
 [![run with docker](https://img.shields.io/badge/run%20with-docker-0db7ed?labelColor=000000&logo=docker)](https://www.docker.com/)
 [![run with singularity](https://img.shields.io/badge/run%20with-singularity-1d355c.svg?labelColor=000000)](https://sylabs.io/docs/)
 [![Launch on Nextflow Tower](https://img.shields.io/badge/Launch%20%F0%9F%9A%80-Nextflow%20Tower-%234256e7)](https://tower.nf/launch?pipeline=https://github.com/fmalmeida/sourmash-nf)
-[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/fmalmeida/bacannot?include_prereleases&label=Latest%20release)](https://github.com/fmalmeida/sourmash-nf/releases)
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/fmalmeida/sourmash-nf?include_prereleases&label=Latest%20release)](https://github.com/fmalmeida/sourmash-nf/releases)
 ## Introduction
 
 **fmalmeida/sourmashnf** is a small and straightforward bioinformatics pipeline that uses [sourmash](https://sourmash.readthedocs.io/en/latest/) to compare genome sequences and plot it like in https://sourmash.readthedocs.io/en/latest/tutorial-basic.html#compare-many-signatures-and-build-a-tree.
