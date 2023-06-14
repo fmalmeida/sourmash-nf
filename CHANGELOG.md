@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Clean-up environment to have a cleaner release
 
 > No work on modules or workflow was done.
-## v0.1 (beta) - [ramutã]
+
+## v0.1 (beta) - [rambutã]
 
 This is the first release (beta version) of the sourmash-nf pipeline. A simple pipeline that uses sourmash to compare genome sequences and generate a matrix (heatmap) plot for comparison.

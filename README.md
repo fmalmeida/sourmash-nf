@@ -1,6 +1,6 @@
 # fmalmeida/sourmash-nf
 
-<!-- [![Cite with Zenodo](http://img.shields.io/badge/DOI-10.5281/zenodo.3568187-1073c8)](https://doi.org/10.5281/zenodo.3568187) -->
+[![Cite with Zenodo](http://img.shields.io/badge/DOI-10.5281/zenodo.8031853-1073c8)](https://doi.org/10.5281/zenodo.8031853)
 [![GitHub Actions CI Status](https://github.com/fmalmeida/sourmash-nf/workflows/docker-ci/badge.svg)](https://github.com/fmalmeida/sourmash-nf/actions?query=workflow%3A%22docker-ci%22)
 [![GitHub Actions CI Status](https://github.com/fmalmeida/sourmash-nf/workflows/singularity-ci/badge.svg)](https://github.com/fmalmeida/sourmash-nf/actions?query=workflow%3A%22singularity-ci%22)
 [![Nextflow](https://img.shields.io/badge/nextflow%20DSL2-%E2%89%A522.10.1-23aa62.svg)](https://www.nextflow.io/)
